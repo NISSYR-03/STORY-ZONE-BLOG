@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Zone - Create Post</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Story Zone</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create-post.html">Create</a></li>
+                <li><a href="niche-blogs.html">Niche Blogs</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div>
+                
+                <button id="dark-mode-toggle">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="create-post" class="card">
+            <h2>Create a New Blog Post</h2>
+            <form id="new-post-form">
+                <input type="text" id="post-title" placeholder="Enter post title" required>
+                <select id="blog-category">
+                    <option value="">Select Blog Category</option>
+                    <option value="travel">Travel</option>
+                    <option value="food">Food</option>
+                    <option value="tech">Tech</option>
+                    <option value="lifestyle">Lifestyle</option>
+                </select>
+                <div class="formatting-options">
+                    <button type="button" data-format="bold"><i class="fas fa-bold"></i></button>
+                    <button type="button" data-format="italic"><i class="fas fa-italic"></i></button>
+                    <button type="button" data-format="underline"><i class="fas fa-underline"></i></button>
+                    <button type="button" data-format="alignLeft"><i class="fas fa-align-left"></i></button>
+                    <button type="button" data-format="alignCenter"><i class="fas fa-align-center"></i></button>
+                    <button type="button" data-format="alignRight"><i class="fas fa-align-right"></i></button>
+                    <button type="button" data-format="bulletList"><i class="fas fa-list-ul"></i></button>
+                    <button type="button" data-format="numberedList"><i class="fas fa-list-ol"></i></button>
+                </div>
+                <select id="post-template">
+                    <option value="">Choose a template</option>
+                    <option value="basic">Basic</option>
+                    <option value="howTo">How-To Guide</option>
+                    <option value="list">List Article</option>
+                    <option value="review">Review</option>
+                </select>
+                <textarea id="post-content" placeholder="Enter post content" required></textarea>
+                <input type="text" id="post-tags" placeholder="Enter tags (comma-separated)">
+                <button type="submit" class="btn">Publish Post</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Story Zone. All rights reserved.</p>
+        <div class="hashtags">
+            <span>#Blogging</span>
+            <span>#NicheBlogging</span>
+            <span>#ContentCreation</span>
+            <span>#TechInnovation</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
